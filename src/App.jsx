@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder'
+import CartItem from './Pages/CartItem/CartItem'
 
 
 
@@ -14,6 +15,8 @@ const App = () => {
       <Routes>a
         <Route path='/' element={<Home/>}/>
         <Route path ='/order' element={<PlaceOrder/>}/>
+        <Route path='/cart' element={<CartItem/>}/>
+        
         
 
 
