@@ -15,8 +15,8 @@
     display: flex;
     list-style: none;
     gap: 20px;
-    color:#2e3448;
-    font-size: 18px;
+    color:#561c1c;
+    font-size: 20px;
 
 }
 
@@ -29,7 +29,7 @@
 .navbar button{
     background: transparent;
     font-size: 16px;
-    color: #49557e;
+    color: #561c1c;
     border: 2px solid #49557e;
     padding: 10px 30px;
     border-radius: 50px;
