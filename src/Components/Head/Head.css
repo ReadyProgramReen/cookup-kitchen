@@ -43,3 +43,33 @@
     background-color: #9b7777;
     color: white;
 }
+
+
+/* MEDIA QUERYYYYYY */
+
+@media (max-width:1050px){
+   
+    .header-content{
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px){
+  
+    .header-content{
+        max-width: 75%;
+        
+    }
+
+    .header-content p{
+        display: none;
+
+    }
+    .header-content h2{
+        font-size: 30px;
+        color: #f5ebeb;
+    }
+    .header-content button{
+        padding: 2vw 4vw;
+    }
+}
