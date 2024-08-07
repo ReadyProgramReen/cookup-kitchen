@@ -3,9 +3,9 @@ import Navbar from './Components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder'
-import CartItem from './Pages/CartItem/CartItem'
 import Footer from './Components/Footer/Footer'
 import LoginPopups from './Components/LoginPopups/LoginPopups'
+import Carts from './Pages/Carts/Carts'
 
 
 
@@ -24,7 +24,7 @@ const [showlogin,setshowLogin] = useState(false);
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path ='/order' element={<PlaceOrder/>}/>
-        <Route path='/cart' element={<CartItem/>}/>
+        <Route path='/cart' element={<Carts/>}/>
       </Routes>
     </div>
     <Footer/>
