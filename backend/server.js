@@ -1,0 +1,31 @@
+import express from "express"
+import cors from 'cors'
+import { connectDB } from "./config/db.js"
+import dotenv from 'dotenv'
+
+
+
+// app config
+dotenv.config({path: './config/config.env'})
+
+
+const app = express()
+
+const Port = 4000
+
+// middleware 
+app.use(express.json())
+app.use(cors())
+
+// db connection
+connectDB();
+
+app.get('/', (req,res)=>{
+    res.send('API Working')
+})
+
+app.listen(Port,()=>{
+    console.log(`Server listening on Port: ${Port}`)
+})
+
+//mongodb+srv://maureenekeugo1:<password>@deployment1.xfziql5.mongodb.net/?
