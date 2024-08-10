@@ -13,9 +13,12 @@ const storage = multer.diskStorage({
     }
 })
 
-const uploads = multer({storage:storage})
+// middleware
+const upload = multer({storage:storage})
 
-foodRouter.post('/add',addFood)
+// route
+
+foodRouter.post('/add',upload.single('image'),addFood)
 
 
 

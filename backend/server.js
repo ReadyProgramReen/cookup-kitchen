@@ -22,8 +22,8 @@ app.use(cors())
 connectDB();
 
 // api endpoints
-
-app.use('/api/food', foodRouter)
+app.use('/api/food', foodRouter);
+app.use('/images',express.static('uploads'))
 
 app.get('/', (req,res)=>{
     res.send('API Working')
@@ -33,4 +33,3 @@ app.listen(Port,()=>{
     console.log(`Server listening on Port: ${Port}`)
 })
 
-//mongodb+srv://maureenekeugo1:<password>@deployment1.xfziql5.mongodb.net/?
