@@ -3,7 +3,9 @@ import '../Order/Order.css'
 
 const Order = () => {
   return (
-    <div>Order</div>
+    <div>
+        
+    </div>
   )
 }
 
