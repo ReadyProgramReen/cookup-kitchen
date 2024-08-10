@@ -13,7 +13,7 @@ const App = () => {
       <Navbar/>
       
       <hr/>
-      <div className="">
+      <div className="app-content">
       <Sidebar/>
       <Routes>
         <Route path='/add' element={<Add/>}/>
