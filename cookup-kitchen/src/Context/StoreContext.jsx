@@ -4,11 +4,14 @@ import { food_list } from "../assets/frontend_assets/assets";
 export const StoreContext = createContext(null)
 
 const StoreContextProvider =(props)=>{
+    
 
     const [cartItem, setCartItem] = useState({});
+    const url = 'http://localhost:4000';
+    const [token,setToken] = useState('');
+
 
     // add to card
-
     const addToCart=(itemid)=>{
         if(!cartItem[itemid]){
             setCartItem((prev)=>({...prev,[itemid]:1}))
@@ -43,13 +46,22 @@ const StoreContextProvider =(props)=>{
         return totalAmount;
     }
 
+    useEffect(()=>{
+        if(localStorage.getItem('token')){
+            setToken(localStorage.getItem('token'))
+        }
+    },[])
+
     const contextValue ={
         food_list,
         cartItem,
         setCartItem,
         addToCart,
         removeFromCart,
-        getTotalCartAmount
+        getTotalCartAmount,
+        url,
+        token,
+        setToken
         
 
     }
