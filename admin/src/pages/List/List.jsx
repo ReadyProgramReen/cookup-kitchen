@@ -24,6 +24,12 @@ const List = () => {
   const remmoveFood = async(foodId)=>{
     const response = await axios.post(`${url}/api/food/remove`,{id:foodId});
     await fetchList();
+    if(response.data.success){
+      toast.success(response.data.message)
+    }
+    else{
+      toast.error(`Error`)
+    }
 
   }
 
