@@ -9,6 +9,11 @@ import { ToastContainer } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
+
+  // define a global url
+
+  const url = 'http://localhost:4000'
+
   return (
     <div className='app'>
       <ToastContainer/>
@@ -19,9 +24,9 @@ const App = () => {
       <div className="app-content">
       <Sidebar/>
       <Routes>
-        <Route path='/add' element={<Add/>}/>
-        <Route path='/list' element={<List/>}/>
-        <Route path='/order' element={<Order/>}/>
+        <Route path='/add' element={<Add url={url}/>}/>
+        <Route path='/list' element={<List url={url}/>}/>
+        <Route path='/order' element={<Order url={url}/>}/>
 
 
       </Routes>
