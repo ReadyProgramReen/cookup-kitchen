@@ -27,6 +27,7 @@ const [showlogin,setshowLogin] = useState(false);
         <Route path ='/order' element={<PlaceOrder/>}/>
         <Route path='/cart' element={<Carts/>}/>
         <Route path='/verify' element={<Verify/>}/>
+
       </Routes>
     </div>
     <Footer/>
