@@ -16,7 +16,7 @@ dotenv.config({path: './config/config.env'})
 
 const app = express()
 
-const Port = 4000
+const port = process.env.PORT || 4000 ;
 
 // middleware 
 app.use(express.json())
@@ -37,7 +37,7 @@ app.get('/', (req,res)=>{
     res.send('API Working')
 })
 
-app.listen(Port,()=>{
-    console.log(`Server listening on Port: ${Port}`)
+app.listen(port,()=>{
+    console.log(`Server listening on Port: ${port}`)
 })
 
