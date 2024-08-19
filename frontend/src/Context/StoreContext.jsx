@@ -8,7 +8,11 @@ const StoreContextProvider =(props)=>{
     
 
     const [cartItem, setCartItem] = useState({});
-    const url = 'http://localhost:4000';
+    
+    // local server url 'http://localhost:4000'
+    
+    // deployed server url
+    const url = 'https://cookup-kitchen-backend.onrender.com';
     const [token,setToken] = useState('');
     const [food_list, setFoodList] = useState([])
 
