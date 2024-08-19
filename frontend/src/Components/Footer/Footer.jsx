@@ -7,8 +7,9 @@ const Footer = () => {
     <div className='footer' id='footer'>
         <div className="footer-content">
             <div className="footer-content-left">
-                <img src={assets.logo} alt="" />
-                <p>Embark on a tantalizing West-African Fusion Experience at Lagos Restaurant and Lounge. where global culture converges. </p>
+                {/* <img src={assets.logo} alt="" /> */}
+                <h1 className='logo'>Cookup Kitchen</h1>
+                <p>Choose from a diverse menu featuring a delectable array of Caribbean dishes. Embark on a tantalizing Caribbean Fusion Experience at our restaurant, where vibrant island flavors and global culture converge. </p>
                 <div className="footer-social-icon">
                     <img src={assets.facebook_icon} alt="" />
                     <img src={assets.twitter_icon} alt="" />

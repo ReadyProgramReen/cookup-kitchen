@@ -12,7 +12,7 @@ const Add = ({url}) => {
         name:'',
         description:'',
         price:'',
-        category:'Salad',
+        category:'Jamaica',
 
     })
 
@@ -41,7 +41,7 @@ const Add = ({url}) => {
                 name:'',
                 description:'',
                 price:'',
-                category:'Salad',
+                category:'Jamaica',
         
             })
             setImage(false)
@@ -82,14 +82,14 @@ const Add = ({url}) => {
                 <div className="add-category flex-col">
                     <p>Product Category</p>
                     <select onChange={onChangeHandler}  name="category" >
-                        <option value="Salad">Salad</option>
-                        <option value="Rolls">Rolls</option>
-                        <option value="Deserts">Deserts</option>
-                        <option value="Sandwich">Sandwich</option>
-                        <option value="Cake">Cake</option>
-                        <option value="Pure Veg">Pure Veg</option>
-                        <option value="Pasta">Pasta</option>
-                        <option value="Noodles">Noodles</option>
+                        <option value="Jamaica">Jamaica</option>
+                        <option value="Haiti">Haiti</option>
+                        <option value="Barbados">Barbados</option>
+                        <option value="Trinidad">Trinidad</option>
+                        <option value="Saint Lucia">Saint Lucia</option>
+                        <option value="Grenada">Grenada</option>
+                        <option value="Saint Kitts">Saint Kitts</option>
+                        <option value="Sint Maarten">Sint Maarten</option>
 
                     </select>
                 </div>
