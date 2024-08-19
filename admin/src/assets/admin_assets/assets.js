@@ -14,4 +14,7 @@ export const assets ={
     parcel_icon
 }
 
-export const url = 'http://localhost:4000'
+ // local server url 'http://localhost:4000'
+ 
+// deployed server url
+export const url = 'https://cookup-kitchen-backend.onrender.com'

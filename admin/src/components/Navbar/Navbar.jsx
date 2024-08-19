@@ -7,7 +7,6 @@ const Navbar = () => {
   return (
     <div className='navbar'>
      <Link to='/'><h1 className='logo'>Cookup Kitchen Admin Panel</h1></Link>
-     {/* <img className='profile' src={assets.profile_image} alt="" /> */}
       <p>S</p>
     </div>
   )
