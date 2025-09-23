@@ -11,7 +11,7 @@ const StoreContextProvider =(props)=>{
     
     // local server url 'http://localhost:4000'
     
-    // deployed server url
+    // deployed server url  'https://cookup-kitchen-backend.onrender.com'
     const url = 'https://cookup-kitchen-backend.onrender.com';
     const [token,setToken] = useState('');
     const [food_list, setFoodList] = useState([])
@@ -52,7 +52,9 @@ const StoreContextProvider =(props)=>{
 
             if(cartItem[item]> 0){
                 let itemInfo = food_list.find((product)=>product._id === item);
-                totalAmount += itemInfo.price* cartItem[item]
+                if (itemInfo) {
+                  totalAmount += itemInfo.price * cartItem[item];
+                }
             }   
         }
         return totalAmount;
@@ -60,6 +62,7 @@ const StoreContextProvider =(props)=>{
 
     const fetchFoodList = async ()=>{
         const response = await axios.get(url+'/api/food/list');
+        console.log("Fetch food list:", response.data)
         setFoodList(response.data.data)
     }
 
